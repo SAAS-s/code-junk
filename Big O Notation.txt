@@ -1,0 +1,5 @@
+Big O Notation
+
+Big O Notation is a way to measure how well the computer algorithm scales as the amount of data involve increase
+for instance = how well does it work if lets say its using 10 element array vs a 10,000 element array.
+Its not always a measure of speed but instead a measure of how an algo scales.
