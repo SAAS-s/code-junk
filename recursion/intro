@@ -1,0 +1,36 @@
+Recursion -- when a function calls itself until a specified condition is met.
+
+//infinite function calling
+void f(){
+	print(1)
+	f();
+}
+
+int main()
+{
+	f();
+}
+
+
+when numerous fuction calls are  waiting due to recursion it calls for segmentation, stack overflow.
+
+ condition to stop the infinite recursion ---base condition
+
+ count =0
+ f()
+ {
+ 	if(count ==4)
+ 		return;
+ 	print(count)
+ 	count++
+ 	f()
+ }
+
+ main()
+ {
+ f();
+ }
+
+** stack space consist of yet to be completed functions that are waiting in stack for another function which is called at the time. 
+ --------------------
+ Recursion tree

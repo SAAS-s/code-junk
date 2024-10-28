@@ -1,0 +1,59 @@
+Algorithm Sum(A,n)
+{
+	s=0; ---------------------------> 1
+	for(i = 0; i < n; i ++)  **==i statement runs for 1 time; i<n is checked for n+1 times; i++ runs for n times==**
+	{
+		s=s+A[i]; -----------> n times
+	}
+	 return s; ------> 1 time
+}
+
+==**f(n)= 2n+3 => O(n)**==         **==Space= A, n , s, i ----> n+3=S(n)==**
+
+| 9   | 3   | 5   | 3   | 1   |
+| --- | --- | --- | --- | --- |
+   0            1            2          3        4          Array
+
+
+So, n =5
+
+---------------------------------------------------------------------
+Algorithm(A,B,n)
+{
+    for( i = 0; i < n; i ++)--------------> n+1 times
+	    {
+		    for(j = 0; j < n; j ++)-----------> n times x n+1 times
+		    {
+			    c[i, j] = A[i,  j] + B[i , j];---------> n times x n times
+		    }
+        }
+}
+
+**==f(n)= 2n^2 + 2n + 1==** 
+**==S(n)= (A, B, c, n, i, j) = 3n^2 + 3==**   
+
+|     |     |     |
+| --- | --- | --- |
+|     |     |     |
+|     |     |     |
+n x n
+3 x 3
+
+---------------------------------------------------------------------
+
+Algorithm multiply(A, B, n)
+{
+	for(i =0; i < n; i ++)------> n+1 times
+	{
+		for( j =0; j <n; j ++)-------->n x n+1 times
+		{
+			c[i + j] = 0; ---------> n x n
+			for(k = 0; k < n; k ++) ----------->n (n+1) n
+			{
+				c[i + j] = c[i, j] + A[i , k] * B[k ,  j]; ------>n x n x n 
+			}
+	    }
+    }
+}
+ ==**f(n)= 2n^3 + 2n + 1 = O(n^3)**==
+ ==**S(n) =(A, B, c, n, i , j , k) = 3n^2 + 4 = O(n^2)

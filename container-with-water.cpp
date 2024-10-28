@@ -19,7 +19,6 @@ n == height.length
 
 */
 #include <bits/stdc++.h>
-#include <Math.h>
 using namespace std;
 
 
@@ -28,7 +27,6 @@ class Solution {
 public:
     int maxArea(vector<int>& height) {
         int maxArea=0;
-        int length;
         for(int i=0; i < height.length; i++) {
             for(int j=0; j<height.length; j++) {
                 int localArea= Math.abs(i-j)*Math.min(height[i],height[j]);

@@ -23,4 +23,4 @@ int main() {
     cout  << fixed <<setprecision(9)<<doublenum<<endl;
 
     return 0;
-}
+} 
