@@ -2,7 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "name": "C++: g++.exe build and debug active file",
       "type": "cppbuild",
+      "request": "launch",
       "label": "C/C++: g++.exe build active file",
       "command": "C:\\MinGW\\bin\\g++.exe",
       "args": [
@@ -12,6 +14,7 @@
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
+      "externalConsole": true,
       "options": {
         "cwd": "${fileDirname}"
       },
